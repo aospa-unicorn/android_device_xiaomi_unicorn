@@ -39,6 +39,13 @@ PRODUCT_VENDOR_PROPERTIES += \
     ro.vendor.sensors.notifier.light_sensors=5,33171089 \
     ro.vendor.sensors.xiaomi.single_tap=true \
     ro.vendor.sensors.xiaomi.udfps=true
+
+# Sensors
+PRODUCT_PACKAGES += \
+    sensors.xiaomi
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf    
     
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
