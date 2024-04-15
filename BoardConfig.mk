@@ -43,3 +43,6 @@ include device/xiaomi/sm8450-common/BoardConfigCommon.mk
 
 # Include proprietary files
 include vendor/xiaomi/unicorn/BoardConfigVendor.mk
+
+# Vibrator
+$(call soong_config_set, XIAOMI_VIBRATOR, USE_EFFECT_STREAM, true)
