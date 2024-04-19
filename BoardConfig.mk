@@ -20,6 +20,9 @@ TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/configs/board/board-info.txt
 # OTA
 TARGET_OTA_ASSERT_DEVICE := unicorn|2206122SC
 
+# Screen density
+TARGET_SCREEN_DENSITY := 560
+
 # Inherit from sm8450-common
 include device/xiaomi/sm8450-common/BoardConfigCommon.mk
 
