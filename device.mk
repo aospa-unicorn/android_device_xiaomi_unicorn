@@ -18,7 +18,11 @@ $(call inherit-product, device/xiaomi/sm8450-common/common.mk)
 # Call the proprietary setup
 $(call inherit-product, vendor/xiaomi/unicorn/unicorn-vendor.mk)
 
-# Overlay
+# Camera
+PRODUCT_SYSTEM_PROPERTIES += \
+    ro.product.mod_device=unicorn
+
+# Overlays
 PRODUCT_PACKAGES += \
     FrameworksResUnicorn \
     NfcResUnicorn \
