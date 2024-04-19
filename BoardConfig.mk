@@ -14,6 +14,9 @@
 
 DEVICE_PATH := device/xiaomi/unicorn
 
+# OTA
+TARGET_OTA_ASSERT_DEVICE := unicorn|2206122SC
+
 # Inherit from sm8450-common
 include device/xiaomi/sm8450-common/BoardConfigCommon.mk
 
