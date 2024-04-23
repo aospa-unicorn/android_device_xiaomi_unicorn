@@ -34,6 +34,12 @@ PRODUCT_PACKAGES += \
     SystemUIResUnicorn \
     WifiResUnicorn
 
+# NFC
+TARGET_NFC_SKU := unicorn
+
+PRODUCT_SYSTEM_EXT_PROPERTIES += \
+    persist.nfc.camera.pause_polling=true
+
 # Powershare
 PRODUCT_PACKAGES += \
     vendor.aospa.powershare-service
