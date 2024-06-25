@@ -18,6 +18,15 @@ $(call inherit-product, device/xiaomi/sm8450-common/common.mk)
 # Call the proprietary setup
 $(call inherit-product, vendor/xiaomi/unicorn/unicorn-vendor.mk)
 
+# Overlay
+PRODUCT_PACKAGES += \
+    FrameworksResUnicorn \
+    NfcResUnicorn \
+    SettingsProviderResUnicorn \
+    SettingsResUnicorn \
+    SystemUIResUnicorn \
+    WifiResUnicorn
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
