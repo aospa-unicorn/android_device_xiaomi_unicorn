@@ -18,6 +18,9 @@ $(call inherit-product, device/xiaomi/sm8450-common/common.mk)
 # Call the proprietary setup
 $(call inherit-product, vendor/xiaomi/unicorn/unicorn-vendor.mk)
 
+# Inherit Firmware
+$(call inherit-product-if-exists, vendor/xiaomi/firmware/unicorn/config.mk)
+
 # Camera
 PRODUCT_SYSTEM_PROPERTIES += \
     ro.product.mod_device=unicorn
