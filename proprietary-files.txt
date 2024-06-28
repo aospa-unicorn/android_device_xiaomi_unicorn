@@ -4,6 +4,10 @@
 vendor/etc/acdbdata/Tutu/Tutu_acdb_cal.acdb
 vendor/etc/acdbdata/Tutu/Tutu_workspaceFileXml.qwsp
 
+# Media (Dolby)
+vendor/etc/dolby/dax-default.xml
+vendor/etc/dolby_vision.cfg
+
 # ADSP modules
 vendor/lib/rfsa/adsp/bm2n00.bin
 vendor/lib/rfsa/adsp/bm2n01.bin
