@@ -25,6 +25,10 @@ $(call inherit-product-if-exists, vendor/xiaomi/firmware/unicorn/config.mk)
 PRODUCT_SYSTEM_PROPERTIES += \
     ro.product.mod_device=unicorn
 
+# Graphics
+PRODUCT_VENDOR_PROPERTIES += \
+    ro.gfx.driver.1=com.qualcomm.qti.gpudrivers.taro.api31
+
 # Kernel
 KERNEL_PREBUILT_DIR := $(LOCAL_PATH)-kernel
 
