@@ -21,6 +21,9 @@ $(call inherit-product, vendor/xiaomi/unicorn/unicorn-vendor.mk)
 # Inherit Firmware
 $(call inherit-product-if-exists, vendor/xiaomi/firmware/unicorn/config.mk)
 
+# Inherit MIUI Camera
+$(call inherit-product-if-exists, vendor/xiaomi/camera/miuicamera.mk)
+
 # Camera
 PRODUCT_SYSTEM_PROPERTIES += \
     ro.product.mod_device=unicorn
