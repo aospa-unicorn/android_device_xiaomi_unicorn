@@ -92,6 +92,17 @@ vendor/lib/rfsa/adsp/misound_res_headphone.bin
 vendor/lib/rfsa/adsp/misound_res_spk.bin
 vendor/lib/rfsa/adsp/misound_res_spk4ch.bin
 
+# Audio HAL
+vendor/lib64/hw/audio.primary.taro.so
+vendor/lib64/hw/gyro_fusion_interface.so
+vendor/lib64/libaudio_log_utils.so
+vendor/lib64/libaudiocloudctrl.so
+vendor/lib64/libaudioroute_ext.so
+vendor/lib64/libmmhardware.so
+vendor/lib64/libresampler.so
+vendor/lib64/libultrasound_notify.so
+vendor/lib64/libxlog.so
+
 # Audio configs
 vendor/etc/audio/sku_cape/mixer_paths_overlay_dynamic.xml
 vendor/etc/audio/sku_cape/mixer_paths_overlay_static.xml
@@ -1187,6 +1198,60 @@ vendor/etc/display/qdcm_calib_data_xiaomi_42_02_0b_cmd_mode_dsc_dsi_panel.json
 vendor/etc/mdss_dsi_l2s_38_0c_0a_dsc_cmd_mi.xml
 vendor/etc/mdss_dsi_l2s_42_02_0b_dsc_cmd_mi.xml
 
+# Displayfeature
+vendor/bin/displayfeature
+vendor/bin/hw/vendor.xiaomi.hardware.displayfeature@1.0-service
+vendor/etc/df_default.xml
+vendor/etc/init/vendor.xiaomi.hardware.displayfeature@1.0-service.rc
+vendor/etc/miLutInfo.txt
+vendor/etc/miLut_0.txt
+vendor/etc/miLut_1.txt
+vendor/etc/miLut_10.txt
+vendor/etc/miLut_11.txt
+vendor/etc/miLut_12.txt
+vendor/etc/miLut_13.txt
+vendor/etc/miLut_14.txt
+vendor/etc/miLut_15.txt
+vendor/etc/miLut_16.txt
+vendor/etc/miLut_17.txt
+vendor/etc/miLut_18.txt
+vendor/etc/miLut_19.txt
+vendor/etc/miLut_2.txt
+vendor/etc/miLut_20.txt
+vendor/etc/miLut_3.txt
+vendor/etc/miLut_4.txt
+vendor/etc/miLut_5.txt
+vendor/etc/miLut_6.txt
+vendor/etc/miLut_7.txt
+vendor/etc/miLut_8.txt
+vendor/etc/miLut_9.txt
+vendor/etc/mi_gc_0.txt
+vendor/etc/mi_gc_1.txt
+vendor/etc/mi_gc_2.txt
+vendor/etc/vintf/manifest/vendor.xiaomi.hardware.displayfeature@1.0-service.xml
+vendor/lib64/hw/displayfeature.default.so
+vendor/lib64/hw/vendor.xiaomi.hardware.displayfeature@1.0-impl.so
+vendor/lib64/libMiDispDevManager.so
+vendor/lib64/libcolortempmode.so
+vendor/lib64/libdisplaycount.so
+vendor/lib64/libdisplayfeature.so
+vendor/lib64/libdisplayfeatureservice.so
+vendor/lib64/libdither.so
+vendor/lib64/libeyecare.so
+vendor/lib64/libflatmode.so
+vendor/lib64/libfpsmonitor.so
+vendor/lib64/libmi-stc-HW-modulate.so
+vendor/lib64/libmiBrightness.so
+vendor/lib64/libmiSensorCtrl.so
+vendor/lib64/libmiXmlParser.so
+vendor/lib64/libmi_dspp.so
+vendor/lib64/libpaperMode.so
+vendor/lib64/libsdr2hdr.so
+vendor/lib64/libsre.so
+vendor/lib64/libtruetone.so
+vendor/lib64/libvideomode.so
+vendor/lib64/vendor.xiaomi.hardware.displayfeature@1.0.so
+
 # Fingerprint
 odm/lib/vendor.xiaomi.hardware.fx.tunnel@1.0.so
 odm/lib64/vendor.xiaomi.hardware.fx.tunnel@1.0.so
@@ -1199,6 +1264,7 @@ vendor/lib64/hw/fingerprint.goodix_fod6.so:vendor/lib64/hw/fingerprint.goodix_fo
 vendor/lib64/libgf_hal.so
 vendor/lib64/libgf_hal6.so
 vendor/lib64/libhvx_proxy_stub.so
+vendor/lib64/vendor.xiaomi.hardware.fingerprintextension@1.0.so
 
 # Graphics (Adreno firmware)
 vendor/firmware/a610_zap.b00
@@ -1340,6 +1406,12 @@ vendor/firmware/st_fts_l2s_thp.ftb
 vendor/firmware/stm_fts_production_limits.csv
 
 # Vibrator
+vendor/firmware/0_click_P_RTP.bin
+vendor/firmware/1_doubelClick_P_RTP.bin
+vendor/firmware/2_tick_P_RTP.bin
+vendor/firmware/3_thud_P_RTP.bin
+vendor/firmware/4_pop_P_RTP.bin
+vendor/firmware/5_heavyClick_P_RTP.bin
 vendor/firmware/aw8697_haptic.bin
 
 # VPU firmware
