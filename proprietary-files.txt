@@ -1,12 +1,8 @@
-# All unpinned blobs below are extracted from unicorn V816.0.4.0.ULECNXM
+# All unpinned blobs below are extracted from unicorn V816.0.6.0.ULECNXM
 
 # ACDB
 vendor/etc/acdbdata/Tutu/Tutu_acdb_cal.acdb
 vendor/etc/acdbdata/Tutu/Tutu_workspaceFileXml.qwsp
-
-# Media (Dolby)
-vendor/etc/dolby/dax-default.xml
-vendor/etc/dolby_vision.cfg
 
 # ADSP modules
 vendor/lib/rfsa/adsp/bm2n00.bin
@@ -91,17 +87,6 @@ vendor/lib/rfsa/adsp/misound_karaokemix_res.bin
 vendor/lib/rfsa/adsp/misound_res_headphone.bin
 vendor/lib/rfsa/adsp/misound_res_spk.bin
 vendor/lib/rfsa/adsp/misound_res_spk4ch.bin
-
-# Audio HAL
-vendor/lib64/hw/audio.primary.taro.so
-vendor/lib64/hw/gyro_fusion_interface.so
-vendor/lib64/libaudio_log_utils.so
-vendor/lib64/libaudiocloudctrl.so
-vendor/lib64/libaudioroute_ext.so
-vendor/lib64/libmmhardware.so
-vendor/lib64/libresampler.so
-vendor/lib64/libultrasound_notify.so
-vendor/lib64/libxlog.so
 
 # Audio configs
 vendor/etc/audio/sku_cape/mixer_paths_overlay_dynamic.xml
@@ -221,34 +206,6 @@ vendor/lib64/libsndcardparser.so
 vendor/lib64/libxlog.so
 vendor/lib64/vendor.qti.hardware.pal@1.0-impl.so
 vendor/lib64/vendor.qti.hardware.pal@1.0.so
-
-# Graphics (Adreno)
-vendor/app/com.qualcomm.qti.gpudrivers.taro.api31/com.qualcomm.qti.gpudrivers.taro.api31.apk
-vendor/gpu/kbc/sequence_manifest.bin
-vendor/gpu/kbc/unified_kbcs_32.bin
-vendor/gpu/kbc/unified_kbcs_64.bin
-vendor/gpu/kbc/unified_ksqs.bin
-vendor/lib64/egl/eglSubDriverAndroid.so
-vendor/lib64/egl/libEGL_adreno.so
-vendor/lib64/egl/libGLESv1_CM_adreno.so
-vendor/lib64/egl/libGLESv2_adreno.so
-vendor/lib64/egl/libVkLayer_ADRENO_qprofiler.so
-vendor/lib64/egl/libq3dtools_adreno.so
-vendor/lib64/egl/libq3dtools_esx.so
-vendor/lib64/libCB.so
-vendor/lib64/libOpenCL.so
-vendor/lib64/libadreno_app_profiles.so
-vendor/lib64/libadreno_utils.so
-vendor/lib64/libgpudataproducer.so
-vendor/lib64/libgsl.so
-vendor/lib64/libkcl.so
-vendor/lib64/libkernelmanager.so
-vendor/lib64/libllvm-glnext.so
-vendor/lib64/libllvm-qcom.so
-vendor/lib64/libllvm-qgl.so
-
-# Graphics (Vulkan)
-vendor/lib64/hw/vulkan.adreno.so
 
 # Batterysecret
 vendor/bin/batterysecret
@@ -1181,76 +1138,12 @@ vendor/firmware/evautil64.b06
 vendor/firmware/evautil64.b07
 vendor/firmware/evautil64.mdt
 
-# Display
-vendor/bin/hw/vendor.qti.hardware.display.composer-service
-vendor/lib64/libclient2slpi.notifier.so
-vendor/lib64/libdisplayconfig.qti.so
-vendor/lib64/libhdrdynamic.so
-vendor/lib64/libhdrdynamicootf.so
-vendor/lib64/libsdedrm.so
-vendor/lib64/libsdm-disp-vndapis.so
-vendor/lib64/libsdmcore.so
-vendor/lib64/libsdmextension.so
-vendor/lib64/libsdmutils.so
+# Display configs
 product/etc/displayconfig/display_id_4630947134992368258.xml:vendor/etc/displayconfig/display_id_4630947134992368258.xml
 vendor/etc/display/qdcm_calib_data_xiaomi_38_0c_0a_cmd_mode_dsc_dsi_panel.json
 vendor/etc/display/qdcm_calib_data_xiaomi_42_02_0b_cmd_mode_dsc_dsi_panel.json
 vendor/etc/mdss_dsi_l2s_38_0c_0a_dsc_cmd_mi.xml
 vendor/etc/mdss_dsi_l2s_42_02_0b_dsc_cmd_mi.xml
-
-# Displayfeature
-vendor/bin/displayfeature
-vendor/bin/hw/vendor.xiaomi.hardware.displayfeature@1.0-service
-vendor/etc/df_default.xml
-vendor/etc/init/vendor.xiaomi.hardware.displayfeature@1.0-service.rc
-vendor/etc/miLutInfo.txt
-vendor/etc/miLut_0.txt
-vendor/etc/miLut_1.txt
-vendor/etc/miLut_10.txt
-vendor/etc/miLut_11.txt
-vendor/etc/miLut_12.txt
-vendor/etc/miLut_13.txt
-vendor/etc/miLut_14.txt
-vendor/etc/miLut_15.txt
-vendor/etc/miLut_16.txt
-vendor/etc/miLut_17.txt
-vendor/etc/miLut_18.txt
-vendor/etc/miLut_19.txt
-vendor/etc/miLut_2.txt
-vendor/etc/miLut_20.txt
-vendor/etc/miLut_3.txt
-vendor/etc/miLut_4.txt
-vendor/etc/miLut_5.txt
-vendor/etc/miLut_6.txt
-vendor/etc/miLut_7.txt
-vendor/etc/miLut_8.txt
-vendor/etc/miLut_9.txt
-vendor/etc/mi_gc_0.txt
-vendor/etc/mi_gc_1.txt
-vendor/etc/mi_gc_2.txt
-vendor/etc/vintf/manifest/vendor.xiaomi.hardware.displayfeature@1.0-service.xml
-vendor/lib64/hw/displayfeature.default.so
-vendor/lib64/hw/vendor.xiaomi.hardware.displayfeature@1.0-impl.so
-vendor/lib64/libMiDispDevManager.so
-vendor/lib64/libcolortempmode.so
-vendor/lib64/libdisplaycount.so
-vendor/lib64/libdisplayfeature.so
-vendor/lib64/libdisplayfeatureservice.so
-vendor/lib64/libdither.so
-vendor/lib64/libeyecare.so
-vendor/lib64/libflatmode.so
-vendor/lib64/libfpsmonitor.so
-vendor/lib64/libmi-stc-HW-modulate.so
-vendor/lib64/libmiBrightness.so
-vendor/lib64/libmiSensorCtrl.so
-vendor/lib64/libmiXmlParser.so
-vendor/lib64/libmi_dspp.so
-vendor/lib64/libpaperMode.so
-vendor/lib64/libsdr2hdr.so
-vendor/lib64/libsre.so
-vendor/lib64/libtruetone.so
-vendor/lib64/libvideomode.so
-vendor/lib64/vendor.xiaomi.hardware.displayfeature@1.0.so
 
 # Fingerprint
 odm/lib/vendor.xiaomi.hardware.fx.tunnel@1.0.so
@@ -1263,8 +1156,6 @@ vendor/lib64/hw/fingerprint.goodix_fod.so:vendor/lib64/hw/fingerprint.goodix_fod
 vendor/lib64/hw/fingerprint.goodix_fod6.so:vendor/lib64/hw/fingerprint.goodix_fod6.default.so
 vendor/lib64/libgf_hal.so
 vendor/lib64/libgf_hal6.so
-vendor/lib64/libhvx_proxy_stub.so
-vendor/lib64/vendor.xiaomi.hardware.fingerprintextension@1.0.so
 
 # Graphics (Adreno firmware)
 vendor/firmware/a610_zap.b00
@@ -1356,17 +1247,6 @@ vendor/etc/sensors/config/tcs3408.json
 vendor/etc/sensors/config/tmd3719.json
 vendor/etc/sensors/sns_reg_config
 
-# Sensors - CIT
-vendor/bin/hw/vendor.xiaomi.sensor.citsensorservice@2.0-service
-vendor/etc/init/vendor.xiaomi.sensor.citsensorservice@2.0-service.rc
-vendor/etc/vintf/manifest/vendor.xiaomi.sensor.citsensorservice@2.0-service.xml
-vendor/lib/hw/vendor.xiaomi.sensor.citsensorservice@2.0-impl.so
-vendor/lib/vendor.xiaomi.sensor.citsensorservice@1.1.so
-vendor/lib/vendor.xiaomi.sensor.citsensorservice@2.0.so
-vendor/lib64/hw/vendor.xiaomi.sensor.citsensorservice@2.0-impl.so
-vendor/lib64/vendor.xiaomi.sensor.citsensorservice@1.1.so
-vendor/lib64/vendor.xiaomi.sensor.citsensorservice@2.0.so
-
 # Sensors - SSC calibration
 -vendor/lib/libssccalapi@2.0.so
 -vendor/lib64/libssccalapi@2.0.so
@@ -1406,12 +1286,6 @@ vendor/firmware/st_fts_l2s_thp.ftb
 vendor/firmware/stm_fts_production_limits.csv
 
 # Vibrator
-vendor/firmware/0_click_P_RTP.bin
-vendor/firmware/1_doubelClick_P_RTP.bin
-vendor/firmware/2_tick_P_RTP.bin
-vendor/firmware/3_thud_P_RTP.bin
-vendor/firmware/4_pop_P_RTP.bin
-vendor/firmware/5_heavyClick_P_RTP.bin
 vendor/firmware/aw8697_haptic.bin
 
 # VPU firmware
