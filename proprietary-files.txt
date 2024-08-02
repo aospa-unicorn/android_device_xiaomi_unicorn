@@ -1149,18 +1149,6 @@ vendor/firmware/evautil64.b06
 vendor/firmware/evautil64.b07
 vendor/firmware/evautil64.mdt
 
-# Display
-vendor/bin/hw/vendor.qti.hardware.display.composer-service
-vendor/lib64/libclient2slpi.notifier.so
-vendor/lib64/libdisplayconfig.qti.so
-vendor/lib64/libhdrdynamic.so
-vendor/lib64/libhdrdynamicootf.so
-vendor/lib64/libsdedrm.so
-vendor/lib64/libsdm-disp-vndapis.so
-vendor/lib64/libsdmcore.so
-vendor/lib64/libsdmextension.so
-vendor/lib64/libsdmutils.so
-
 # Display configs
 product/etc/displayconfig/display_id_4630947134992368258.xml:vendor/etc/displayconfig/display_id_4630947134992368258.xml
 vendor/etc/display/qdcm_calib_data_xiaomi_38_0c_0a_cmd_mode_dsc_dsi_panel.json
@@ -1168,7 +1156,6 @@ vendor/etc/display/qdcm_calib_data_xiaomi_42_02_0b_cmd_mode_dsc_dsi_panel.json
 vendor/etc/mdss_dsi_l2s_38_0c_0a_dsc_cmd_mi.xml
 vendor/etc/mdss_dsi_l2s_42_02_0b_dsc_cmd_mi.xml
 
-	
 # Displayfeature
 vendor/bin/displayfeature
 vendor/bin/hw/vendor.xiaomi.hardware.displayfeature@1.0-service
@@ -1359,17 +1346,6 @@ vendor/etc/sensors/config/tcs3408.json
 vendor/etc/sensors/config/tmd3719.json
 vendor/etc/sensors/sns_reg_config
 
-# Sensors - CIT
-vendor/bin/hw/vendor.xiaomi.sensor.citsensorservice@2.0-service
-vendor/etc/init/vendor.xiaomi.sensor.citsensorservice@2.0-service.rc
-vendor/etc/vintf/manifest/vendor.xiaomi.sensor.citsensorservice@2.0-service.xml
-vendor/lib/hw/vendor.xiaomi.sensor.citsensorservice@2.0-impl.so
-vendor/lib/vendor.xiaomi.sensor.citsensorservice@1.1.so
-vendor/lib/vendor.xiaomi.sensor.citsensorservice@2.0.so
-vendor/lib64/hw/vendor.xiaomi.sensor.citsensorservice@2.0-impl.so
-vendor/lib64/vendor.xiaomi.sensor.citsensorservice@1.1.so
-vendor/lib64/vendor.xiaomi.sensor.citsensorservice@2.0.so
-
 # Sensors - SSC calibration
 -vendor/lib/libssccalapi@2.0.so
 -vendor/lib64/libssccalapi@2.0.so
@@ -1409,12 +1385,6 @@ vendor/firmware/st_fts_l2s_thp.ftb
 vendor/firmware/stm_fts_production_limits.csv
 
 # Vibrator
-vendor/firmware/0_click_P_RTP.bin
-vendor/firmware/1_doubelClick_P_RTP.bin
-vendor/firmware/2_tick_P_RTP.bin
-vendor/firmware/3_thud_P_RTP.bin
-vendor/firmware/4_pop_P_RTP.bin
-vendor/firmware/5_heavyClick_P_RTP.bin
 vendor/firmware/aw8697_haptic.bin
 
 # VPU firmware
