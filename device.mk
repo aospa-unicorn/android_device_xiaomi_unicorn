@@ -67,8 +67,10 @@ PRODUCT_COPY_FILES += \
 
 # Sensors
 PRODUCT_PACKAGES += \
-    sensors.xiaomi \
-    disp2slpi
+    sensors.xiaomi
+
+PRODUCT_VENDOR_PROPERTIES += \
+    ro.vendor.sensors.notifier.light_sensors=5,33171089
 
 PRODUCT_VENDOR_PROPERTIES += \
     ro.vendor.audio.us.proximity=true \
