@@ -37,6 +37,11 @@ PRODUCT_ODM_PROPERTIES += \
 PRODUCT_VENDOR_PROPERTIES += \
     ro.gfx.driver.1=com.qualcomm.qti.gpudrivers.taro.api31
 
+# Init scripts
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/rootdir/etc/init.touch_report.rc:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/etc/init/init.touch_report.rc \
+    $(LOCAL_PATH)/rootdir/etc/init.touch_report.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.touch_report.rc
+
 # Kernel
 KERNEL_PREBUILT_DIR := $(LOCAL_PATH)-kernel
 
@@ -71,7 +76,9 @@ PRODUCT_VENDOR_PROPERTIES += \
     ro.vendor.audio.us.proximity_waitfornegative_feature=true \
     vendor.audio.ultrasound.stoplatency=60 \
     vendor.audio.ultrasound.usync=1000 \
-    ro.vendor.sensors.notifier.light_sensors=5,33171089
+    ro.vendor.sensors.notifier.light_sensors=5,33171089 \
+    ro.vendor.sensors.xiaomi.single_tap=true \
+    ro.vendor.sensors.xiaomi.udfps=true
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf
