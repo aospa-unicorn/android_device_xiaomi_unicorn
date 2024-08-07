@@ -33,6 +33,10 @@ PRODUCT_ODM_PROPERTIES += \
     ro.surface_flinger.set_idle_timer_ms?=1000 \
     ro.surface_flinger.set_touch_timer_ms?=200
 
+# Graphics
+PRODUCT_VENDOR_PROPERTIES += \
+    ro.gfx.driver.1=com.qualcomm.qti.gpudrivers.taro.api31
+
 # Kernel
 KERNEL_PREBUILT_DIR := $(LOCAL_PATH)-kernel
 
