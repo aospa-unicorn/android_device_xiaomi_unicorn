@@ -1360,8 +1360,19 @@ vendor/etc/sensors/config/tmd3719.json
 vendor/etc/sensors/sns_reg_config
 
 # Sensors - SSC calibration
+vendor/bin/hw/vendor.qti.hardware.sensorscalibrate@1.0-service
+vendor/etc/init/vendor.qti.hardware.sensorscalibrate@1.0-service.rc
+vendor/etc/permissions/vendor-qti-hardware-sensorscalibrate.xml
+vendor/lib64/hw/vendor.qti.hardware.sensorscalibrate@1.0-impl.so
+vendor/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so
+vendor/lib64/libsensor_calibration.so
+vendor/lib64/libsensorcal.so
 -vendor/lib/libssccalapi@2.0.so
 -vendor/lib64/libssccalapi@2.0.so
+
+# Thermal
+vendor/bin/thermal-engine-v2
+vendor/etc/init/init_thermal-engine-v2.rc
 
 # Thermal engine
 vendor/etc/thermal-4k.conf
