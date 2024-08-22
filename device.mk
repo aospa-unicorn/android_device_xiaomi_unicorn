@@ -28,6 +28,9 @@ PRODUCT_PACKAGES += \
     UnicornFrameworksOverlay \
     UnicornNfcOverlay
 
+# NFC
+TARGET_NFC_SKU := unicorn
+
 # Powershare
 PRODUCT_PACKAGES += \
     vendor.aospa.powershare-service
