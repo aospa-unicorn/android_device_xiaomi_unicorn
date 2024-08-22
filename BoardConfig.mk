@@ -6,6 +6,10 @@
 
 DEVICE_PATH := device/xiaomi/unicorn
 
+# Partitions
+BOARD_SUPER_PARTITION_SIZE := 9126805504
+BOARD_QTI_DYNAMIC_PARTITIONS_SIZE := 9122611200 # (BOARD_SUPER_PARTITION_SIZE - 4MB overhead)
+
 # Powershare
 TARGET_POWERSHARE_NODE := /sys/class/qcom-battery/reverse_chg_mode
 
