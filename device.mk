@@ -26,7 +26,8 @@ PRODUCT_PACKAGES += \
     UnicornSettingsProviderOverlay \
     UnicornWifiOverlay \
     UnicornFrameworksOverlay \
-    UnicornNfcOverlay
+    UnicornNfcOverlay \
+    UnicornSystemUIOverlay
 
 # NFC
 TARGET_NFC_SKU := unicorn
