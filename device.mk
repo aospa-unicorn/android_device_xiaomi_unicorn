@@ -47,7 +47,8 @@ PRODUCT_PACKAGES += \
     SettingsProviderResUnicorn \
     SettingsResUnicorn \
     SystemUIResUnicorn \
-    WifiResUnicorn
+    WifiResUnicorn \
+    UnicornSystemUIOverlay
 
 # NFC
 TARGET_NFC_SKU := unicorn
