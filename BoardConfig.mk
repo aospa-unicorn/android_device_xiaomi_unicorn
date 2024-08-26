@@ -9,6 +9,9 @@ DEVICE_PATH := device/xiaomi/unicorn
 # Inherit from sm8450-common
 include device/xiaomi/sm8450-common/BoardConfigCommon.mk
 
+# Bootloader
+TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/configs/board/board-info.txt
+
 # Display
 TARGET_SCREEN_DENSITY := 560
 
