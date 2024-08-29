@@ -1,5 +1,11 @@
 # All unpinned blobs below are extracted from unicorn V816.0.9.0.ULECNXM
 
+# Current blobs with ELF checks disabled:
+# audio.primary.taro depends on vendor.qti.hardware.pal@1.0-impl, which is a gnu makefile target
+# libar-pal depends on libagmclient, which is a gnu makefile target
+# libcrussp depends on libagmmixer, which is a gnu makefile target
+# libmorpho_ubwc, libTrueSight depends on NDK libnativewindow and build is unable to resolve its symbols
+
 # ACDB
 vendor/etc/acdbdata/Tutu/Tutu_acdb_cal.acdb
 vendor/etc/acdbdata/Tutu/Tutu_workspaceFileXml.qwsp
@@ -188,7 +194,7 @@ vendor/lib64/libmisight.so
 vendor/lib64/vendor.qti.hardware.AGMIPC@1.0.so
 
 # Audio HAL
-vendor/lib64/hw/audio.primary.taro.so
+vendor/lib64/hw/audio.primary.taro.so;DISABLE_CHECKELF
 vendor/lib64/hw/gyro_fusion_interface.so
 vendor/lib64/libaudio_log_utils.so
 vendor/lib64/libaudiocloudctrl.so
@@ -209,7 +215,7 @@ vendor/lib64/libadsprpc.so
 vendor/lib64/libar-acdb.so
 vendor/lib64/libar-gpr.so
 vendor/lib64/libar-gsl.so
--vendor/lib64/libar-pal.so
+-vendor/lib64/libar-pal.so;DISABLE_CHECKELF
 vendor/lib64/libats.so
 vendor/lib64/libaudio_log_utils.so
 vendor/lib64/libaudiocloudctrl.so
@@ -218,7 +224,7 @@ vendor/lib64/libbatterylistener.so
 vendor/lib64/libcapiv2svacnnvendor.so
 vendor/lib64/libcapiv2svarnnvendor.so
 vendor/lib64/libcapiv2uvvendor.so
-vendor/lib64/libcrussp.so
+vendor/lib64/libcrussp.so;DISABLE_CHECKELF
 vendor/lib64/libdapparamstorage.so
 vendor/lib64/libfmpal.so
 vendor/lib64/libkaraokepal.so
