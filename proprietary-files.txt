@@ -1417,6 +1417,10 @@ vendor/etc/sensors/sns_reg_config
 -vendor/lib/libssccalapi@2.0.so
 -vendor/lib64/libssccalapi@2.0.so
 
+# Thermal
+vendor/bin/thermal-engine-v2
+vendor/etc/init/init_thermal-engine-v2.rc
+
 # Thermal engine
 vendor/etc/thermal-4k.conf
 vendor/etc/thermal-arvr.conf
