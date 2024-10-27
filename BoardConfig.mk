@@ -43,3 +43,6 @@ include device/xiaomi/sm8450-common/BoardConfigCommon.mk
 
 # Include proprietary files
 include vendor/xiaomi/unicorn/BoardConfigVendor.mk
+
+# Properties
+TARGET_VENDOR_PROP += $(DEVICE_PATH)/configs/properties/vendor.prop

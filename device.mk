@@ -18,9 +18,6 @@ $(call inherit-product, device/xiaomi/sm8450-common/common.mk)
 # Call the proprietary setup
 $(call inherit-product, vendor/xiaomi/unicorn/unicorn-vendor.mk)
 
-# Inherit Firmware
-$(call inherit-product-if-exists, vendor/xiaomi/firmware/unicorn/config.mk)
-
 # Display - timers
 PRODUCT_ODM_PROPERTIES += \
     ro.surface_flinger.set_idle_timer_ms?=1000 \
@@ -40,6 +37,7 @@ KERNEL_PREBUILT_DIR := $(LOCAL_PATH)-kernel
 
 # Overlays
 PRODUCT_PACKAGES += \
+    ApertureResUnicorn \
     FrameworksResUnicorn \
     NfcResUnicorn \
     SettingsProviderResUnicorn \
