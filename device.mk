@@ -32,9 +32,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/init.touch_report.rc:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/etc/init/init.touch_report.rc \
     $(LOCAL_PATH)/rootdir/etc/init.touch_report.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.touch_report.rc
 
-# Kernel
-KERNEL_PREBUILT_DIR := $(LOCAL_PATH)-kernel
-
 # Overlays
 PRODUCT_PACKAGES += \
     ApertureResUnicorn \
@@ -51,10 +48,6 @@ TARGET_NFC_SKU := unicorn
 
 PRODUCT_SYSTEM_EXT_PROPERTIES += \
     persist.nfc.camera.pause_polling=true
-
-# Powershare
-PRODUCT_PACKAGES += \
-    vendor.aospa.powershare-service
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/init.unicorn.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.unicorn.rc
